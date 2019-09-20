@@ -1,0 +1,154 @@
+<head>
+    <title>Espadotas El Guts </title>
+
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="Estilo.css">
+    <script src="JavaScript.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="Navv">
+        <a class="navbar-brand" onclick="openNav()"><img src=Jamba.png ></a>
+        <a class="navbar-brand" id="BrandTienda" href="FrontPage.html"> Espadotas El Tripas </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item" id="Buscar">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" id="Buscartxt" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                  </form>
+            </li>
+
+            <li class="nav-item">
+              <a href="Login.html">Iniciar sesion</a>
+            </li>
+            <li class= "nav-item">
+              <a href="Registro.html">Registrarse</a>
+            </li>
+            <li class= "nav-item">
+                <a href="Carrito.html"><img src="carrito.png"></a>
+              </li>
+          </ul>
+          
+        </div>
+    </nav>
+
+          <div id="sideNavigation" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="FrontPage.html">Destacados</a>
+              <a href="#">Promociones</a>
+              <button class="dropdown-btn">Categorías 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="Espadas.html">Espadas</a>
+                <a href="Mazos.html">Mazos</a>
+                <a href="Hachas.html">Hachas</a>
+              </div>
+              <a href="#contact">Acerca de mí</a>
+          </div>
+          <script>
+              /* Script para el Dropdown de arriba^ */
+              var dropdown = document.getElementsByClassName("dropdown-btn");
+              var i;
+
+              for (i = 0; i < dropdown.length; i++) {
+                dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+                } else {
+                dropdownContent.style.display = "block";
+                }
+                });
+              }
+          </script>
+
+    <div class="Contenido">   
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col"> </th>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Disponibilidad</th>
+                                <th scope="col" class="text-center">Cantidad</th>
+                                <th scope="col" class="text-right">Precio</th>
+                                <th scope="col" class="text-center">Eliminar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="sword.png" style="width: 50px; height: 50px;"/> </td>
+                                <td>Espadota de acero</td>
+                                <td>Disponible</td>
+                                <td><input class="form-control" type="number" value="1" /></td>
+                                <td class="text-right">$ 600</td>
+                                <td class="text-right"><button class="btn btn-sm btn-danger"><i class="Eliminar-Carrito"></i> Eliminar </button> </td>
+                            </tr>
+                            <tr>
+                                <td><img src="axe.png" style="width: 50px; height: 50px;"/> </td>
+                                <td>Hacha grandota de acero</td>
+                                <td>Disponible</td>
+                                <td><input class="form-control" type="number" value="1" /></td>
+                                <td class="text-right">$ 750</td>
+                                <td class="text-right"><button class="btn btn-sm btn-danger"><i class="Eliminar-Carrito"></i> Eliminar </button> </td>
+                            </tr>
+                            <tr>
+                                    <td><img src="morningstar.png" style="width: 50px; height: 50px;"/> </td>
+                                <td>Mazo con picos violentos de acero</td>
+                                <td>Disponible</td>
+                                <td><input class="form-control" type="number" value="1" /></td>
+                                <td class="text-right">$ 1050</td>
+                                <td class="text-right"><button class="btn btn-sm btn-danger"><i class="Eliminar-Carrito"></i> Eliminar </button> </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>Sub-Total</td>
+                                <td class="text-right">$Mucho</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>Costo de envío</td>
+                                <td class="text-right">$NoTanto</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><strong>Total</strong></td>
+                                <td class="text-right"><strong>$MuchoMás</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col mb-2">
+                <div class="row">
+                    <div class="col-6">
+                        <button class="btn btn-block btn-light">Seguir comprando</button>
+                    </div>
+                    <div class="col-6">
+                        <button class="btn btn-lg btn-block btn-outline-success text-uppercase">Pagar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>

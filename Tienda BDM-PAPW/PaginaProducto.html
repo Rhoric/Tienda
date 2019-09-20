@@ -1,0 +1,167 @@
+<head>
+    <title>Espadotas El tripas </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="Estilo.css">
+    <script src="JavaScript.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="Navv">
+        <a class="navbar-brand" onclick="openNav()"><img src=Jamba.png ></a>
+        <a class="navbar-brand" id="BrandTienda" href="FrontPage.html"> Espadotas El Tripas </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item" id="Buscar">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" id="Buscartxt" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </li>
+            <li class="nav-item">
+              <a href="Login.html">Iniciar sesion</a>
+            </li>
+            <li class= "nav-item">
+              <a href="Registro.html">Registrarse</a>
+            </li>
+            <li class= "nav-item">
+                <a href="Carrito.html"><img src="carrito.png"></a>
+              </li>
+          </ul>
+        </div>
+    </nav>
+    <div id="sideNavigation" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="FrontPage.html">Destacados</a>
+        <a href="#">Promociones</a>
+        <button class="dropdown-btn">Categorías 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="Espadas.html">Espadas</a>
+            <a href="Mazos.html">Mazos</a>
+            <a href="Hachas.html">Hachas</a>
+        </div>
+        <a href="#contact">Acerca de mí</a>
+    </div>
+        <script>
+              /* Script para el Dropdown de arriba^ */
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+            for (i = 0; i < dropdown.length; i++) {
+                dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+                } else {
+                dropdownContent.style.display = "block";
+                }
+                });
+              }
+          </script>
+    <div class="Contenido" id="muestra"></div>
+        			<div class="container">	
+        				<div class="col-12">
+        					<div class="Producto-Muestra">
+                                    <span class="Muestras container col-6 pull-left">
+                                        <div class="imagen-muestra">
+                                            <a class="imagen-muestra">
+                                                <img src="sword.png" alt=""></img>
+                                            </a>
+                                        </div>
+                                        <div class="imagen-muestra">
+                                            <a class="imagen-muestra">
+                                                <img src="axe.png" alt=""></img>
+                                            </a>
+                                        </div>
+                                        <div class="imagen-muestra">
+                                            <a class="imagen-muestra">
+                                                <img src="morningstar.png" alt=""></img>
+                                            </a>
+                                        </div>
+
+                                    </span>
+                                    <span class="Muestra-chida">
+                                        <img id="item-display" src="sword.png" alt=""></img>
+                                    </span>
+                            </div>
+                            <script>
+                            
+                            const galleryThumbnail = document.querySelectorAll(".imagen-muestra a");
+                            
+                            const galleryFeatured = document.querySelector(".Muestra-chida img");
+                            
+                            
+                            galleryThumbnail.forEach((item) => {
+                              item.addEventListener("mouseover", function () {
+                                let image = item.children[0].src;
+                                galleryFeatured.src = image;
+                              });
+                            });   
+                        </script>
+                        
+        				</div>
+                    
+        				<div class="col-md-7">
+        					<div class="product-title">Corsair GS600 600 Watt PSU</div>
+        					<div class="product-desc">The Corsair Gaming Series GS600 is the ideal price/performance choice for mid-spec gaming PC</div>
+        					<div class="product-rating"><i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star-o"></i> </div>
+        					<hr>
+        					<div class="product-price">$ 1234.00</div>
+        					<div class="product-stock">In Stock</div>
+        					<hr>
+        					<div class="btn-group cart">
+        						<button type="button" class="btn btn-success">
+        							Add to cart 
+        						</button>
+        					</div>
+        					<div class="btn-group wishlist">
+        						<button type="button" class="btn btn-danger">
+        							Add to wishlist 
+        						</button>
+        					</div>
+        				</div>
+        			</div> 
+        		</div>
+        		<div class="container-fluid">		
+        			<div class="col-md-12 product-info">
+        					<ul id="myTab" class="nav nav-tabs nav_tabs">
+                            
+        						<li class="active"><a href="#service-one" data-toggle="tab">DESCRIPTION</a></li>
+        						<li><a href="#service-two" data-toggle="tab">PRODUCT INFO</a></li>
+        						<li><a href="#service-three" data-toggle="tab">REVIEWS</a></li>
+                            
+        					</ul>
+        				<div id="myTabContent" class="tab-content">
+        						<div class="tab-pane fade in active" id="service-one">
+                                
+        							<section class="container product-info">
+        								The Corsair Gaming Series GS600 power supply is the ideal price-performance solution for building or upgrading a Gaming PC. A single +12V rail provides up to 48A of reliable, continuous power for multi-core gaming PCs with multiple graphics cards. The ultra-quiet, dual ball-bearing fan automatically adjusts its speed according to temperature, so it will never intrude on your music and games. Blue LEDs bathe the transparent fan blades in a cool glow. Not feeling blue? You can turn off the lighting with the press of a button.
+
+        								<h3>Corsair Gaming Series GS600 Features:</h3>
+        								<li>It supports the latest ATX12V v2.3 standard and is backward compatible with ATX12V 2.2 and ATX12V 2.01 systems</li>
+        								<li>An ultra-quiet 140mm double ball-bearing fan delivers great airflow at an very low noise level by varying fan speed in response to temperature</li>
+        								<li>80Plus certified to deliver 80% efficiency or higher at normal load conditions (20% to 100% load)</li>
+        								<li>0.99 Active Power Factor Correction provides clean and reliable power</li>
+        								<li>Universal AC input from 90~264V — no more hassle of flipping that tiny red switch to select the voltage input!</li>
+        								<li>Extra long fully-sleeved cables support full tower chassis</li>
+        								<li>A three year warranty and lifetime access to Corsair’s legendary technical support and customer service</li>
+        								<li>Over Current/Voltage/Power Protection, Under Voltage Protection and Short Circuit Protection provide complete component safety</li>
+        								<li>Dimensions: 150mm(W) x 86mm(H) x 160mm(L)</li>
+        								<li>MTBF: 100,000 hours</li>
+        								<li>Safety Approvals: UL, CUL, CE, CB, FCC Class B, TÜV, CCC, C-tick</li>
+        							</section>
+                                
+        						</div>
+        					<div class="tab-pane fade" id="service-two">          
+        						<section class="container">  
+        						</section>
+        					</div>
+        					<div class="tab-pane fade" id="service-three">
+        					</div>
+        				</div>
+        				<hr>
+        			</div>
+    </div>
+</body>

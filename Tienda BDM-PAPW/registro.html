@@ -1,0 +1,161 @@
+
+<head>
+  <title>Espadotas El Tripas</title>
+
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="Bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="Estilo.css">
+ 
+  <script src="JavaScript.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="Navv">
+        <a class="navbar-brand" onclick="openNav()"><img src=Jamba.png ></a>
+        <a class="navbar-brand" id="BrandTienda" href="FrontPage.html"> Espadotas El Tripas </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item" id="Buscar">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" id="Buscartxt" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                  </form>
+            </li>
+
+            <li class="nav-item">
+              <a href="Login.html">Iniciar sesion</a>
+            </li>
+            <li class= "nav-item">
+              <a href="Registro.html">Registrarse</a>
+            </li>
+            <li class= "nav-item">
+                <a href="Carrito.html"><img src="carrito.png"></a>
+              </li>
+          </ul>
+          
+        </div>
+    </nav>
+              
+        
+    <div id="sideNavigation" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="FrontPage.html">Destacados</a>
+        <a href="#">Promociones</a>
+        <button class="dropdown-btn">Categorías 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="Espadas.html">Espadas</a>
+          <a href="Mazos.html">Mazos</a>
+          <a href="Hachas.html">Hachas</a>
+        </div>
+        <a href="#contact">Acerca de mí</a>
+    </div>
+    <script>
+        /* Script para el Dropdown de arriba^ */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          }
+          });
+        }
+    </script>
+
+<div class="contenido-reg">   
+           
+    <div class="container bootstrap snippet">
+    <div class="row">
+  		<div class="col-sm-3"><!--left col-->
+              
+
+      <div class="text-center">
+        <img src="Avatar.png" class="avatar img-circle img-thumbnail" alt="avatar">
+        <h6>Subir otra foto?</h6>
+        <input type="file" class="text-center center-block file-upload">
+      </div></hr><br>
+
+          
+               
+         
+          
+        </div><!--/col-3-->
+        
+    	<div class="col-sm-9">
+            <ul class="nav nav-tabs">
+
+                <li class=><p data-toggle="tab" href="#Config">Registro de cuenta</a></li>
+
+              </ul>  
+          <div class="tab-content Registro">
+               <form class="form-registro" id="registrationForm">
+                <div class="form-group">
+                    <div class="col-xs-6">
+                        <label for="User"><h4>Nombre de usuario</h4></label>
+                        <input type="text" class="form-control" name="User" id="User" placeholder="Ingresa tu nombre de usuario">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-6">
+                        <label for="email"><h4>Correo electronico</h4></label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="tu@correo.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-6">
+                        <label for="Contra"><h4>Contraseña</h4></label>
+                        <input type="password" class="form-control" name="Contra" id="Contra" placeholder="Ingresa tu contraseña">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-6">
+                      <label for="Contra2"><h4>Verifica tu contraseña</h4></label>
+                        <input type="password" class="form-control" name="Contra2" id="Contra2" placeholder="Contraseña" title="enter your password2.">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-6">
+                      <label for="Nombre"><h4>Nombre</h4></label>
+                        <input type="text" class="form-control" name="Nombre" id="Nombre" placeholder="Ingresa tu nombre completo">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-xs-6">
+                      <label for="Direccion"><h4>Dirección</h4></label>
+                        <input type="text" class="form-control" name="Direccion" id="Direccion" placeholder="Ingresa tu dirección">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-6">
+                       <label for="FechaNac"><h4>Fecha de nacimiento</h4></label>
+                        <input type="date" class="form-control" name="FechaNac" id="FechaNac">
+                    </div>
+                </div>
+                <div class="form-group">
+                     <div class="col-xs-12">
+                      <hr>
+                      <button class="btn btn-outline-success my-2 my-sm-0" onclick="Validar()"><i class="botoncillo glyphicon glyphicon-ok-sign"></i> Guardar! </button>
+                      <button class="btn btn-lg" type="reset"><i class="botoncillo glyphicon glyphicon-repeat"></i> Resetear</button>
+                      </div>
+                </div>
+            </form>
+             </div>
+
+          </div><!--/tab-content-->
+        
+        </div><!--/col-9-->
+    </div><!--/row-->
+</div> 
+    </body>
+                                                      
