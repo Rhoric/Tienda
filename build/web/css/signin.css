@@ -1,0 +1,90 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8/11/2019, 01:37:59 PM
+    Author     : 66918
+*/
+
+
+body {
+  padding-top: 56px;
+}
+
+body {
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  
+  margin: 10px;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.form-signin input[type="text"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.userimg {
+  width:40px;
+  height:40px;
+  border-radius:19px;
+
+}
+.col-lg-3{
+  background-color:#03b1fc;
+}
+.my-4{
+  color: white;
+}
+.bg-dark{
+  background-color:#03b1fc;
+}
+#doce{
+  margin-left:0rem;
+}
+#id-product-form{
+    margin: 3rem;
+}
+#columna{
+    margin: 10px;
+    width: 500px;
+}
+
+.product-checkbox{
+    padding:10px;
+}
+.product-fieldset{
+    width:100%;
+    border-color: #1c1c1c;
+    border-width: 1px;
+    border-radius: 15px;
+    background-color: #lclclc;
+}

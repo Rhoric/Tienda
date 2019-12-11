@@ -1,0 +1,226 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8/11/2019, 01:37:51 PM
+    Author     : 66918
+*/
+
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template-overviews/shop-homepage)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+
+.userimg {
+  width:40px;
+  height:40px;
+  border-radius:19px;
+  
+
+}
+.col-lg-3{
+    background-color:#03b1fc;
+    background-image: linear-gradient(to bottom, #03b1fc, #035e82);
+    max-width:285px;
+}
+.my-4{
+  color: white;
+}
+.bg-dark{
+  background-color:#035e82;
+}
+.py-5.bg-dark{
+  background-color:#035e82;
+}
+.colspi{
+  background-color: #03b1fc;
+  position: relative;
+  padding-left: 3rem;
+  padding-right: 3rem;
+
+}
+#doce{
+  margin-left:0rem;
+  margin-right: 0rem;
+}
+.col-lg-9{
+  padding-top:2rem;
+  padding-right: 1rem;
+  max-width: 845px;
+}
+.card-title{
+    color: #ffffff;
+}
+.align-items-end{
+  background-color:#03b1fc;
+  
+  width:219px;
+}
+.col.align-items-end{
+  background-color:#03b1fc;
+  background-image: linear-gradient(to bottom, #03b1fc, #035e82);
+  width:219px;
+}
+.col-lg-7{
+  padding-top:2rem;
+  width:825px;
+  max-width: 855px;
+}
+.userimg2{
+  width:40px;
+  height:40px;
+  margin-right: 10px;
+  margin-left: 20px;
+  
+}
+.articulo-article-image{
+    width: 45%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.articulo-article-image img{
+    width: 90%;
+}
+.card-img-center{
+    width:90%;
+    height: 150px;
+}
+.articulo-images{
+    width: 15%;
+    /*height: 100%;*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+.articulo-images-image{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.articulo-images-image:hover{
+    border-width: 2px;
+    border-style: solid;
+    border-color: #1c1c1c;
+}
+.articulo-images-image img{
+    width: 90%;
+}
+.redMainSPD{
+  background-color:#03b1fc;
+  color:white;
+  width:219px;
+}
+.redMainSPD2{
+  background-color:#03b1fc;
+  color:white;
+ 
+}
+
+.chat-wrapper{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.chat-messages-div{
+    width: 60%;
+    height:80%;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom, #03b1fc, #035e82);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 10px 15px 10px 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow-y: scroll;
+}
+.chat-form{
+    width: 60%;
+    height: 20%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+.chat-input-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.chat-input-div p{
+    display: inline;
+    text-align: center;
+}
+.chat-input{
+    width: 65%;
+    height: 100%;
+    border-style: solid;
+    border-color: #1c1c1c;
+    border-width: 1px;
+    border-radius: 15px;
+    outline: none;
+    background: transparent;
+    
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #1c1c1c;
+}
+
+
+
+.messages-message{
+    
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+.message-received{
+    background-color: #03b1fc;
+    color: #white;
+    float: left;
+}
+.message-sent{
+    background-color: #888888;
+    color: #white;
+    float: right;
+}
+.message-user{
+    display: inline;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+.message-text{
+    /*display: inline;*/
+    color:white;
+    font-size: 15px;
+}
+
+.chat-confirmation{
+    margin-top: 5%;
+    width: 80%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
